@@ -1,0 +1,67 @@
+.news-wala-card, .news-card {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.news-wala-card .top-left, .news-card .top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #2d2369;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.news-wala-card:hover .additional-text, .news-card:hover .additional-text {
+  opacity: 1;
+}
+
+.news-wala-card .additional-text, .news-card .additional-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 576px) {
+  .news-wala-card, .news-card {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-wala-card, .news-card {
+    height: 250px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .news-wala-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .news-card {
+    width: 100%;
+  }
+}
